@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.22e3ff5b.css",
+    "main.js": "/static/js/main.d0a832c1.js",
+    "static/media/process_background.jpg": "/static/media/process_background.4512b0d29aa2e1b338a2.jpg",
+    "static/media/line_of_credit.jpg": "/static/media/line_of_credit.2b6cc6786c4e2072a7a9.jpg",
+    "static/media/merchant_cash.jpg": "/static/media/merchant_cash.1172b64efe4137c1ec6e.jpg",
+    "static/media/term_funding.jpg": "/static/media/term_funding.dc22236bb5219cd66a8f.jpg",
+    "static/media/product_background.jpg": "/static/media/product_background.fdb6d1cd4f443fbb1450.jpg",
+    "static/media/purchase_order.jpg": "/static/media/purchase_order.a95776ccd61f60f6ab40.jpg",
+    "static/media/process_assessment.jpg": "/static/media/process_assessment.2c3b0b4bff5a932f47a1.jpg",
+    "static/media/business_loan.jpg": "/static/media/business_loan.0dc27f0bff8e72f9a07e.jpg",
+    "static/media/brand_strategy.jpg": "/static/media/brand_strategy.24e6d57cb9b7b587621a.jpg",
+    "static/media/Homepage Picture.jpg": "/static/media/Homepage Picture.de25ff838d45c43f3b55.jpg",
+    "static/media/agreement.svg": "/static/media/agreement.f8b94b7f87e4574a1ad1e4e1a76ac841.svg",
+    "static/media/lender_background.jpg": "/static/media/lender_background.26fbe4f24499864858cf.jpg",
+    "static/media/seethrough.png": "/static/media/seethrough.28055fc481e9751f568c.png",
+    "static/media/seethrough_footer.png": "/static/media/seethrough_footer.52b931c74808dfd21b81.png",
+    "static/media/process_view_offers.jpg": "/static/media/process_view_offers.e90e9e68525a107da3ad.jpg",
+    "static/media/contract.svg": "/static/media/contract.47b9b2fd7f06f01fbd2e27e8e4ee2540.svg",
+    "static/media/inventory.svg": "/static/media/inventory.b6216ca4cbe7079e385632a4546b1ace.svg",
+    "static/media/pay_supplier.svg": "/static/media/pay_supplier.00fbbb21d452d108dd2d928e6c53fc32.svg",
+    "static/media/fill_application.svg": "/static/media/fill_application.58f6948d00b91266829a831309850b02.svg",
+    "static/media/lender_assessment.svg": "/static/media/lender_assessment.e3c4d906a7380665effb3e8da170b6b4.svg",
+    "static/media/accept_offer.svg": "/static/media/accept_offer.a213dbb55ee3254f035edffddd818e46.svg",
+    "static/media/business_expansion.svg": "/static/media/business_expansion.19449c28627fb9036e5d82fd2bc16471.svg",
+    "static/media/corporate.png": "/static/media/corporate.b22b1a6ea451397d19af.png",
+    "static/media/mogapi.png": "/static/media/mogapi.78a8292e4ff67ee824ee.png",
+    "static/media/cyberdock.png": "/static/media/cyberdock.5825a584edaede877e5e.png",
+    "static/media/matoto.png": "/static/media/matoto.c041ffe458118d2bb71c.png",
+    "static/media/index.cjs": "/static/media/index.cd2730895dbd1969d9c3.cjs",
+    "index.html": "/index.html",
+    "main.22e3ff5b.css.map": "/static/css/main.22e3ff5b.css.map",
+    "main.d0a832c1.js.map": "/static/js/main.d0a832c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22e3ff5b.css",
+    "static/js/main.d0a832c1.js"
+  ]
+}
