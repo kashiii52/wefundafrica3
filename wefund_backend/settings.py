@@ -124,6 +124,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR,'wefund-africa/build')
+            os.path.join(BASE_DIR,'wefund_backend/build')
             ],
         'APP_DIRS': True,
         'OPTIONS': {
