@@ -1,0 +1,450 @@
+@media (min-width: 1024px) {
+    .footer_master_div {
+        display: flex;
+        margin-top: auto;
+        width: 100%;
+        height: auto;
+        background-color: #F5F6F7;
+        z-index: 2;
+        box-sizing: border-box;
+        flex-direction: column;
+        border-top: 5px solid #3AA641;
+    }
+
+    .inside_master_div {
+        display: flex;
+        box-sizing: border-box;
+        padding: 50px 0 50px 110px;
+    }
+
+    .logo_number_email_icon {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 25%;
+        padding: 0 80px 0 0;
+    }
+
+    .footer_logo {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .footer_logo img {
+        width: 120px;
+    }
+
+    .company_vision {
+        margin-bottom: 30px;
+        color: #5E5E5E;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .footer_number {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: #3AA641;
+        font-size: 24px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .footer_number::after {
+        content: '';
+        display: block;
+        width: 55%;
+        height: 2px;
+        background-color: #2E8540;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer_number:hover::after {
+        transform: scaleX(1);
+    }
+
+    .footer_email {
+        display: flex;
+        font-family: "Jost", sans-serif;
+        color: #5E5E5E;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .footer_icons {
+        display: flex;
+        gap: 15px;
+        color: #5E5E5E;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .footer_navigation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px 0 0;
+        font-family: "Jost", sans-serif;
+
+    }
+
+    .navigation_title {
+        display: flex;
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 600;
+        /* letter-spacing: 0.5px; */
+    }
+
+    .footer_navigation_link {
+        display: flex;
+        flex-direction: column;
+        color: #5E5E5E;
+        font-size: 16px;
+    }
+
+    .footer_navigation_link a {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .footer_border_external {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+    }
+    .footer_border_line {
+        display: flex;
+        border: 1.5px solid #98A1B7;
+        width: 95%;
+    }
+
+    .footer_title {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0 10px 0;
+        color: #5E5E5E;
+        font-size: 12px;
+        word-spacing: 2px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 501px) and (max-width: 1023px) {
+    .footer_master_div {
+        display: flex;
+        margin-top: auto;
+        width: 100%;
+        height: auto;
+        background-color: #F5F6F7;
+        z-index: 2;
+        box-sizing: border-box;
+        flex-direction: column;
+        border-top: 5px solid #3AA641;
+    }
+    .inside_master_div {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 50px 0 50px 20px;
+    }
+
+    .logo_number_email_icon {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 80%;
+        padding: 0 80px 0 0;
+    }
+
+    .footer_logo {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .footer_logo img {
+        width: 100px;
+    }
+
+    .company_vision {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        color: #5E5E5E;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .footer_border_line {
+        display: flex;
+        border: 1.5px solid #98A1B7;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+    }
+
+    .footer_title {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0 10px 20px;
+        color: #5E5E5E;
+        font-size: 12px;
+        word-spacing: 2px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer_number {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: #3AA641;
+        font-size: 24px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .footer_email {
+        display: flex;
+        font-family: "Jost", sans-serif;
+        color: #5E5E5E;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .footer_icons {
+        display: flex;
+        gap: 15px;
+        color: #5E5E5E;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .footer_navigation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px 0 0;
+        font-family: "Jost", sans-serif;
+
+    }
+
+    .navigation_title {
+        display: flex;
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 600;
+        /* letter-spacing: 0.5px; */
+    }
+
+    .footer_navigation_link {
+        display: flex;
+        flex-direction: column;
+        color: #5E5E5E;
+        font-size: 16px;
+    }
+
+    .footer_navigation_link a {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+
+    .footer_border_line {
+        display: flex;
+        border: 1.5px solid #98A1B7;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .footer_title {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0 10px 0;
+        color: #5E5E5E;
+        font-size: 12px;
+        word-spacing: 2px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .footer_master_div {
+        display: flex;
+        margin-top: auto;
+        width: 100%;
+        height: auto;
+        background-color: #F5F6F7;
+        z-index: 2;
+        box-sizing: border-box;
+        flex-direction: column;
+        border-top: 5px solid #3AA641;
+    } 
+    .inside_master_div {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 50px 0 50px 20px;
+    }
+
+    .logo_number_email_icon {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 80%;
+        padding: 0 80px 0 0;
+    }
+
+    .footer_logo {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .footer_logo img {
+        width: 100px;
+    }
+
+    .company_vision {
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        color: #5E5E5E;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .footer_border_line {
+        display: flex;
+        border: 1.5px solid #98A1B7;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+    }
+
+    .footer_title {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0 10px 20px;
+        color: #5E5E5E;
+        font-size: 12px;
+        word-spacing: 2px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer_number {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: #3AA641;
+        font-size: 24px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .footer_email {
+        display: flex;
+        font-family: "Jost", sans-serif;
+        color: #5E5E5E;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .footer_icons {
+        display: flex;
+        gap: 15px;
+        color: #5E5E5E;
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .footer_navigation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px 0 0;
+        font-family: "Jost", sans-serif;
+
+    }
+
+    .navigation_title {
+        display: flex;
+        color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 600;
+        /* letter-spacing: 0.5px; */
+    }
+
+    .footer_navigation_link {
+        display: flex;
+        flex-direction: column;
+        color: #5E5E5E;
+        font-size: 16px;
+    }
+
+    .footer_navigation_link a {
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+
+    .footer_border_line {
+        display: flex;
+        border: 1.5px solid #98A1B7;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .footer_title {
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 0 10px 0;
+        color: #5E5E5E;
+        font-size: 12px;
+        word-spacing: 2px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,37 @@
+.staticnavbar_master_div {
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5vh;
+    background-color: #000000;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 1px 1px #2f3d44;
+    -moz-box-shadow: 0px 1px 1px #2f3d44;
+    box-shadow: 0px 1px 1px #2f3d44;
+    position: relative;
+}
+
+.staticnavbar_compnent li {
+    color: #ffff;
+    display: inline-block;
+    left: 8%;
+    margin-right: 30px;
+    padding: 13px 15px 12px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+}
+
+.staticnavbar_compnent li::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}

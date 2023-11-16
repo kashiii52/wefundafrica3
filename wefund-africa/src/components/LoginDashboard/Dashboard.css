@@ -1,0 +1,241 @@
+@media (min-width: 1024px) {
+  .logout_button_div {
+    display: flex;
+  }
+  #logout_btn {
+      margin-top: auto;
+      margin-bottom: 10px;
+      width: 180px;
+      height: 40px;
+      background-color: #4B60DF;
+      color: #fff;
+      padding: 10px 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: auto;
+      bottom: 20px;
+      margin-right: 100px;
+      /* margin-top: 20px; */
+    }
+
+    #logout_btn span {
+      position: relative;
+      top: 1px;
+    }
+
+    #logout_btn:hover {
+      background-color: #465EF2;
+    }
+
+    #logout_icon {
+      position: fixed;
+      left: 25px;
+      font-size: 20px;
+    }
+    .dashboard_master_div {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      height: auto;
+      padding: 20px 0 0 0;
+    }
+    .dashborad_navbar {
+      display: flex;
+      width: 100%;
+      height: 5vh;
+      gap: 30px;
+      padding: 30px 0 10px 50px;
+    }
+    .dashborad_navbar span {
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .dashborad_navbar span:hover{
+      color: #13AFF0;
+      cursor: pointer;
+    }
+
+    .blue-text {
+      color: #13AFF0;
+    }
+    
+    .black-text {
+      color: black;
+    }
+
+
+
+    /* Add this to your CSS file (e.g., Dashboard.css) */
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 501px) and (max-width: 1023px) {
+  .logout_button_div {
+    display: flex;
+  }
+  #logout_btn {
+      margin-top: auto;
+      margin-bottom: 10px;
+      width: 180px;
+      height: 40px;
+      background-color: #4B60DF;
+      color: #fff;
+      padding: 10px 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: auto;
+      bottom: 20px;
+      margin-right: 100px;
+      /* margin-top: 20px; */
+    }
+
+    #logout_btn span {
+      position: relative;
+      top: 1px;
+    }
+
+    #logout_btn:hover {
+      background-color: #465EF2;
+    }
+
+    #logout_icon {
+      position: fixed;
+      left: 25px;
+      font-size: 20px;
+    }
+    .dashboard_master_div {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      height: auto;
+      padding: 20px 0 0 0;
+    }
+    .dashborad_navbar {
+      display: flex;
+      width: 100%;
+      height: 5vh;
+      gap: 30px;
+      padding: 30px 0 10px 50px;
+    }
+    .dashborad_navbar span {
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .dashborad_navbar span:hover{
+      color: #13AFF0;
+      cursor: pointer;
+    }
+
+    .blue-text {
+      color: #13AFF0;
+    }
+    
+    .black-text {
+      color: black;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+  .logout_button_div {
+    display: flex;
+  }
+  #logout_btn {
+      margin-top: auto;
+      margin-bottom: 10px;
+      width: 180px;
+      height: 40px;
+      background-color: #4B60DF;
+      color: #fff;
+      padding: 10px 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: auto;
+      bottom: 20px;
+      margin-right: 100px;
+      /* margin-top: 20px; */
+    }
+
+    #logout_btn span {
+      position: relative;
+      top: 1px;
+    }
+
+    #logout_btn:hover {
+      background-color: #465EF2;
+    }
+
+    #logout_icon {
+      position: fixed;
+      left: 25px;
+      font-size: 20px;
+    }
+    .dashboard_master_div {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      height: auto;
+      padding: 20px 0 0 0;
+    }
+    .dashborad_navbar {
+      display: flex;
+      width: 100%;
+      height: 5vh;
+      gap: 30px;
+      padding: 30px 0 10px 50px;
+    }
+    .dashborad_navbar span {
+      font-family: "Jost", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .dashborad_navbar span:hover{
+      color: #13AFF0;
+      cursor: pointer;
+    }
+
+    .blue-text {
+      color: #13AFF0;
+    }
+    
+    .black-text {
+      color: black;
+    }
+
+
+
+
+}

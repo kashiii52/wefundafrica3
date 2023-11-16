@@ -1,0 +1,264 @@
+@media (min-width: 1024px) {
+    .dashboard_navbar_master_div {
+        display: flex;
+        width: 100%;
+        background-color: #F2F4F8;
+        margin-top: 20px;
+    }
+    .dashboard_navbar_components {
+        display: flex;
+        margin-left: 50px;
+        width: 40%;
+    }
+    .dashboard_button {
+        background: #F2F4F8;
+        border: none;
+        font-size: 16px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 20px;
+        border: 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+
+    }
+    .profile_button {
+        width: 110px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 16px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 20px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+    }
+    .dashboard_button:hover {
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+        color: #13AFF0;
+    }
+    .dashboard_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .profile_button:hover {
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+        color: #13AFF0;
+    }
+    .profile_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .welcome_user {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 550;
+        font-family: "Jost", sans-serif;
+    }
+    .logout_button_div {
+        display: flex;
+        margin-right: 20px;
+    }
+    .logout_button {
+        width: 110px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 16px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 20px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        /* justify-content: flex-end;
+        align-items: flex-end; */
+    }
+    .logout_button:hover {
+        color: #13AFF0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 501px) and (max-width: 1023px) {
+    .dashboard_navbar_master_div {
+        display: flex;
+        width: 100%;
+        background-color: #F2F4F8;
+        margin-top: 20px;
+    }
+    .dashboard_navbar_components {
+        display: flex;
+        margin-left: 50px;
+        width: 40%;
+    }
+    .dashboard_button {
+        background: #F2F4F8;
+        border: none;
+        font-size: 14px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 15px;
+        border: 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+
+    }
+    .profile_button {
+        width: 110px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 14px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 15px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+    }
+    .dashboard_button:hover {
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+        color: #13AFF0;
+    }
+    .dashboard_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .profile_button:hover {
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+        color: #13AFF0;
+    }
+    .profile_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .welcome_user {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 550;
+        font-family: "Jost", sans-serif;
+    }
+    .logout_button_div {
+        display: flex;
+        margin-right: 20px;
+    }
+    .logout_button {
+        width: 110px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 14px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 15px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        /* justify-content: flex-end;
+        align-items: flex-end; */
+    }
+    .logout_button:hover {
+        color: #13AFF0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .dashboard_navbar_master_div {
+        display: flex;
+        width: 100%;
+        background-color: #F2F4F8;
+        margin-top: 20px;
+    }
+    .dashboard_navbar_components {
+        display: flex;
+        margin-left: 50px;
+        width: 40%;
+    }
+    .dashboard_button {
+        background: #F2F4F8;
+        border: none;
+        font-size: 12px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 10px;
+        border: 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    
+    
+    }
+    .profile_button {
+        width: 70px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 12px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    
+    }
+    .dashboard_button:hover {
+        color: #13AFF0;
+    }
+    .dashboard_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .profile_button:hover {
+        color: #13AFF0;
+    }
+    .profile_button.active {
+        background-color: white;
+        color: #13AFF0;
+    }
+    .welcome_user {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 550;
+        font-family: "Jost", sans-serif;
+    }
+    .logout_button_div {
+        display: flex;
+        margin-right: 20px;
+    }
+    .logout_button {
+        width: 70px;
+        background: #F2F4F8;
+        border: none;
+        font-size: 12px;
+        font-family: "Jost", sans-serif;
+        font-weight: 550;
+        padding: 10px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+    .logout_button:hover {
+        color: #13AFF0;
+    }
+}

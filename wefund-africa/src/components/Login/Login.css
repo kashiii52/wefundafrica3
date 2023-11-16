@@ -1,0 +1,263 @@
+@media (min-width: 501px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Helvetica Neue", Roboto, Arial, Sans-Serif, serif;
+    }
+
+    .login_page_master_div {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        min-height: 60vh;
+        width: 100%;
+        background-color:#F2F4F9;
+        flex-direction: column;
+    }
+    .login_background_picture {
+        display: flex;
+        width: 100%;
+        height: 75px;
+        background-color: #000;
+        color: #293239;
+        overflow: hidden;
+        margin-bottom: 10px;
+        /* border-bottom-left-radius: 60%;
+        border-bottom-right-radius: 60%; */
+    }
+
+    .login_page_child_div {
+        padding: 20px;
+        background-color: #232B32;
+        border-radius: 8px;
+        left: 50%;
+        /* top: 10%; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    #tl_logo_login {
+        height: auto;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #submit_button_login {
+        width: 400px;
+        border: none;
+        background: #3AA641;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #F2F4F9;
+        height: 40px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #submit_button_login:hover {
+        background: #3AA641;
+    }
+
+    .inputbox {
+        margin: 10px 0px;
+        position: relative;
+        width: 400px;
+    }
+
+    .inputbox input {
+        width: 380px;
+        padding: 10px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+        background: transparent;
+    }
+
+    input:-webkit-autofill {
+        -webkit-text-fill-color: #fff;
+        -webkit-box-shadow: 0 0 0px 40rem #232B32 inset;
+        caret-color: #fff;
+    }
+
+    .inputbox span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        pointer-events: none;
+        font-size: 16px;
+        color: #D0D9F6;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+
+    .inputbox input:valid~span,
+    .inputbox input:focus~span {
+        transform: translateX(12px) translateY(-25px);
+        font-size: 0.9em;
+        padding: 0 10px;
+        background: #3AA641;
+        color: #D0D9F6;
+    }
+
+    .inputbox input:valid,
+    .inputbox input:focus {
+        border: 1px solid #3AA641;
+    }
+
+    #authloader {
+        width: 26px;
+        height: 26px;
+        border: 2.5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .forget_password {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 0 0 10px;
+    }
+    .forget_password span {
+        font-family: "Helvetica Neue", Roboto, Arial, Sans-Serif, serif;
+        cursor: pointer;
+        color: #D0D9F6;
+    }
+    .forget_password span:hover {
+        color: #3AA641
+    }
+    .register_div_heading {
+        font-size: 20px;
+        font-weight: 550;
+        color: #D0D9F6;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Roboto, Arial, Sans-Serif, serif;
+    }
+
+    .login_page_master_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        z-index: 0;
+        background-color: #293239;
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .login_page_child_div {
+        padding: 20px;
+        z-index: 1;
+        background-color: #232B32;
+        border-radius: 8px;
+        left: 50%;
+        top: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    #tl_logo_login {
+        height: auto;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #submit_button_login {
+        width: 220px;
+        border: none;
+        background: #3AA641;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #F2F4F9;
+        height: 40px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #submit_button_login:hover {
+        background: #3AA641;
+    }
+
+    .inputbox {
+        margin: 10px 0px;
+        position: relative;
+        width: 220px;
+    }
+
+    .inputbox input {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #5c5b5b;
+        background-color: #5c5b5b;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+        background: transparent;
+    }
+
+    .inputbox span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        pointer-events: none;
+        font-size: 16px;
+        color: #D0D9F6;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+
+    .inputbox input:valid~span,
+    .inputbox input:focus~span {
+        transform: translateX(12px) translateY(-25px);
+        font-size: 0.9em;
+        padding: 0 10px;
+        background: #3AA641;
+        color: #D0D9F6;
+    }
+
+    .inputbox input:valid,
+    .inputbox input:focus {
+        border: 1px solid #3AA641;
+    }
+    .register_div_heading {
+        font-size: 20px;
+        font-weight: 550;
+        color: #D0D9F6;
+        margin-bottom: 10px;
+    }
+}
