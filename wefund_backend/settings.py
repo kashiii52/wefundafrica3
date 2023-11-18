@@ -225,6 +225,15 @@ MEDIA_URL = 'https://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 # bucket_name = 'wefundafrica-documents'
 # folder_path = 'test/'
 
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'wefund-africa/build/static')
-]
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR,'wefund-africa/build/static')
+# ]
+
+STATICFILES_DIRS = (
+    os.path.join(os.path.join(BASE_DIR, 'wefund-africa'), 'build', 'static'),
+    os.path.join(os.path.join(BASE_DIR, 'wefund-africa'), 'build'),
+)
+
+# # Static files (CSS, JavaScript, images)
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
