@@ -73,7 +73,7 @@ const Navbar = ({color}) => {
               <li onClick={() => navigate("/products")}>Products</li>
               <li onClick={() => navigate("/process")}>Process</li>
               <li onClick={() => navigate("/login")}>Log In</li>
-              <li>Apply now</li>
+              <li onClick={() => navigate("/register")}>Apply now</li>
             </ul>
           )}
           <div
