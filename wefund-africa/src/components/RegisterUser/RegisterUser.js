@@ -10,7 +10,7 @@ const ApplyNow = () => {
   const [authLoader, setAuthLoader] = useState(false);
   
   const backendRoot =
-    "http://127.0.0.1:8000";
+    "http://54.236.11.151:8000";
 
   const navigate = useNavigate();
 
