@@ -16,7 +16,7 @@ export const Provider = ({ children }) => {
   );
 
   const backendRoot =
-    "http://127.0.0.1:8000";
+    "http://127.0.0.1";
   let [user, setUser] = useState(() =>
     localStorage.getItem("authTokens")
       ? jwt_decode(localStorage.getItem("authTokens"))
