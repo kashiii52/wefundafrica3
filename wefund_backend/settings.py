@@ -30,6 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '34.230.76.165',
     '127.0.0.1',
+    '54.236.11.151',
+    'wefund.africa'
 ]
 
 
