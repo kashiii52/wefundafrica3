@@ -46,7 +46,7 @@ const UserProfile = () => {
     };
 
     const backendRoot =
-    "http://54.236.11.151:8000";
+    "http://54.236.11.151";
     const handleUpdateProfile = async () => {
         if (!profileFieldsChanged) {
             console.log("No profile fields have been changed.");
