@@ -34,7 +34,9 @@ function FileUpload() {
   ];
 
   const navigate = useNavigate();
-  const backendRoot = 'http://54.236.11.151';
+  const backendRoot = 
+  // 'http://54.236.11.151';
+  "http://127.0.0.1:8000";
 
   useEffect(() => {
     const accessToken = JSON.parse(localStorage.getItem('authTokens')).access;

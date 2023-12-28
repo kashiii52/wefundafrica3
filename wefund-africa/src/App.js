@@ -10,6 +10,8 @@ import ApplyNow from "./components/RegisterUser/RegisterUser"
 import UserProfile from "./components/UserProfile/UserProfile";
 import Lender from "./components/Lenders/Lender";
 import Products from "./components/Products/Product";
+import Forgotpassword from "./components/Forgotpassword/Forgotpassword";
+import Passwordreset from "./components/Passwordreset/Passwordreset";
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
         <Route path="/register" element={<ApplyNow />} />
         {/* Define your public routes */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path='/forgot' element={<Forgotpassword />} />
+        <Route path='/password_reset/confirm' element={<Passwordreset />} />
+
 
         
         <Route element={ <PrivateRoutes /> } >

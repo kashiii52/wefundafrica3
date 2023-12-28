@@ -31,7 +31,7 @@ const Products = () => {
             </div>
         </div>
         <div>
-            <Navbar />
+            <Navbar showApplyNowButton={true} isDashboard={false}  />
         </div>
 
         <div className="product_service_background">

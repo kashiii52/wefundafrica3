@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import { toBeChecked } from "@testing-library/jest-dom/matchers";
@@ -16,7 +16,8 @@ export const Provider = ({ children }) => {
   );
 
   const backendRoot =
-    "http://54.236.11.151";
+    // "http://54.236.11.151";
+    "http://127.0.0.1:8000";
   let [user, setUser] = useState(() =>
     localStorage.getItem("authTokens")
       ? jwt_decode(localStorage.getItem("authTokens"))
@@ -55,6 +56,8 @@ export const Provider = ({ children }) => {
           password: e.target.password.value,
         }),
       });
+      console.log("not login")
+
       let data = await response.json();
       if (response.status === 200) {
         setAuthloader(false);
@@ -73,6 +76,7 @@ export const Provider = ({ children }) => {
           years_in_business: data.years_in_business,
           monthly_revenue: data.monthly_revenue,
         });
+        
         localStorage.setItem("authTokens", JSON.stringify(tokensToStore));
         setUser(jwt_decode(tokensToStore.access));
         navigate("/user/dashboard");

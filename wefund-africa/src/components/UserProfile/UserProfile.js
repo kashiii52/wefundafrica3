@@ -11,13 +11,10 @@ import DashboardNavbar from "../Dashboard_Navbar/Dashboard_Navbar";
 
 
 
-
 const UserProfile = () => {
 
     let { userDetail, setUserDetail } = useContext(AppContext);
-
     const [isLoading, setIsLoading] = useState(true);
-
     const navigate = useNavigate();
     const [updatedUserDetail, setUpdatedUserDetail] = useState({
         username: userDetail.username,
@@ -25,7 +22,7 @@ const UserProfile = () => {
         phone_number: userDetail.phone_number,
         first_name: userDetail.first_name,
         last_name: userDetail.last_name,
-        // image: userDetail.image,
+        image: userDetail.image,
         years_in_business: userDetail.years_in_business,
         monthly_revenue: userDetail.monthly_revenue || "0",
     });
@@ -33,8 +30,6 @@ const UserProfile = () => {
 
     const [profileFieldsChanged, setProfileFieldsChanged] = useState(false);
     const [imageBase64, setImageBase64] = useState("");
-
-
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -46,7 +41,8 @@ const UserProfile = () => {
     };
 
     const backendRoot =
-    "http://54.236.11.151";
+    // "http://54.236.11.151";
+    "http://127.0.0.1:8000";
     const handleUpdateProfile = async () => {
         if (!profileFieldsChanged) {
             console.log("No profile fields have been changed.");
@@ -115,16 +111,56 @@ const UserProfile = () => {
         });
     }, []);
 
+
+    const [authLoader, setAuthLoader] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        if (!authLoader) {
+            setAuthLoader(true);
+
+            const formData = new FormData(e.target);
+            const accessToken = JSON.parse(localStorage.getItem('authTokens')).access;
+
+            try {
+            let response = await fetch(`${backendRoot}/image-upload/`, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                },
+            });
+            let data = await response.json();
+            console.log(data);
+            console.log("before if condition");
+            if (response.status === 201) {
+                console.log("User successfully register")
+                // navigate("/login");
+                window.location.reload();
+            } else {
+                const errorData = await response.json();
+            }
+            } catch (error) {
+            console.error("An error occurred:", error);
+            } 
+        }
+    };                                                                            
+
 return (
     <div className="Homepage_master_div">
         <div>
         <StaticNavBar />
+        <div className="navbar-for-dashboard">
+            <Navbar showApplyNowButton={false} isDashboard={true} />
+        </div>
         </div>
         <div>
         <DashboardNavbar />
         </div>
         <div className="dashboard_master_div">
-        {isLoading ? ( // Conditionally render loader if isLoading is true
+        {isLoading ? ( 
+            // Conditionally render loader if isLoading is true
             // <div className="loader-container">
             <div className="loader" />
             // </div>
@@ -140,9 +176,32 @@ return (
                         {/* <img className="profile_img" src={`${backendRoot}${userDetail.image}`} /> */}
                         <img className="profile_img" src={`data:image/png;base64,${imageBase64}`} alt="Profile" />
                     </div>
-                    <div className="update_profile_button_div">
+
+
+
+                    {/* <div className="update_profile_button_div">
                         <button className="update_picture_btn">Update Picture</button>
-                    </div>
+                    </div> */}
+
+
+                    <form id="inputform" onSubmit={handleSubmit}>
+                    
+                        <div className="upload_profile_image">
+                            <span className="profile_image_title">Upload Profile Image*</span>
+                        </div> 
+                        <div className="inputbox-image">
+                                <input name="image" type="file" accept="image/*" required="required"></input>
+                        </div>
+                        <button id="upload_image_button" type="submit">
+                            {authLoader ? <span id="authloader"></span> : "Upload"}
+                        </button>
+                    </form>
+                    
+
+
+
+
+
                     <div className="profile_user_details">
                         <div className="single_line">Company Name: {updatedUserDetail.username}</div>
                         <div className="single_line">Email: {updatedUserDetail.email}</div>

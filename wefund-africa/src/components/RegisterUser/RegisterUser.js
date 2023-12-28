@@ -10,7 +10,9 @@ const ApplyNow = () => {
   const [authLoader, setAuthLoader] = useState(false);
   
   const backendRoot =
-    "http://54.236.11.151";
+    // "http://54.236.11.151";
+    "http://127.0.0.1:8000";
+
 
   const navigate = useNavigate();
 
@@ -49,7 +51,7 @@ const ApplyNow = () => {
       </div>
       <div className="login_background_picture"></div>
       <div className="navbar_homepage">
-        <Navbar />
+        <Navbar showApplyNowButton={true} isDashboard={false}  />
       </div>
 
       <div className="login_page_master_div">
@@ -90,11 +92,14 @@ const ApplyNow = () => {
         </div> */}
 
 
-
+      {/* <div className="upload_profile_image">
+          <span className="profile_image_title">Upload Profile Image*</span>
+      </div> 
       <div className="inputbox">
-            <input name="image" type="file" accept="image/*" required="required" />
-            {/* <span>Upload an image</span> */}
-          </div>
+            <input name="image" type="file" accept="image/*" required="required"></input>
+          </div> */}
+
+          
 
           {/* Add years_in_business input */}
           <div className="inputbox">

@@ -179,6 +179,15 @@
     .menu_button {
         display: none;
     }
+
+
+    /* .navbar_buttons .black_background {
+        background-color: black;
+    } */
+    
+    .navbar_dashboard {
+        background-color: black;
+    }
 }
 
 

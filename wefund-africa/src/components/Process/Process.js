@@ -38,7 +38,7 @@ const Process = () => {
             </div>
         </div>
       <div>
-        <Navbar />
+        <Navbar showApplyNowButton={true} isDashboard={false}  />
       </div>
       
       <div className="process_master_div">

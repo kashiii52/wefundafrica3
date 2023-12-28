@@ -8,7 +8,7 @@ import { BsGearFill } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 
-const Navbar = ({color}) => {
+const Navbar = ({color, showApplyNowButton, isDashboard }) => {
   const [showProductsMenu, setShowProductsMenu] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,13 +47,15 @@ const Navbar = ({color}) => {
 
 
   return (
-    <div className={`navbar_master_div ${isScrolled ? "navbar_scrolled" : ""}`}>
+    // <div className={`navbar_master_div ${isScrolled ? "navbar_scrolled" : ""}`}>
+    <div className={`navbar_master_div ${isScrolled ? "navbar_scrolled" : ""} ${isDashboard ? "navbar_dashboard" : ""}`}>
       <div className="navbar_component">
         <div className="navbar_log">
           <img src={tl_logo} alt="logo" />
         </div>
 
-        <div className="navbar_buttons">
+        {/* <div className="navbar_buttons"> */}
+        <div className={`navbar_buttons ${isDashboard ? "black_background" : ""}`}>
           <button className="menu_button" onClick={toggleDropdown}>
             MENU <FiMenu className="menu_icon" />
           </button>
@@ -88,14 +90,25 @@ const Navbar = ({color}) => {
             <span>Process</span>
           </div>
 
+          {showApplyNowButton && (
           <div className="navbar_button" onClick={() => navigate("/login")}>
             <BiLogIn className="navbar_home_icon" />
             Log in
           </div>
+          )}
           <div>
             <BsSearch className="search_icon" />
           </div>
-          <div className="apply_button_container" onClick={() => navigate("/register")}>Apply now</div>
+          {/* <div className="apply_button_container" onClick={() => navigate("/register")}>Apply now</div> */}
+
+          {showApplyNowButton && (
+            <div
+              className="navbar_button apply_button_container"
+              onClick={() => navigate("/register")}
+            >
+              Apply now
+            </div>
+          )}
         </div>
       </div>
     </div>

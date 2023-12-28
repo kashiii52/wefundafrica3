@@ -29,7 +29,7 @@ const Lender = () => {
             </span>
         </div>
         <div>
-            <Navbar />
+            <Navbar showApplyNowButton={true} isDashboard={false}  />
         </div>
         
         

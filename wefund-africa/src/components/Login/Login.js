@@ -4,11 +4,17 @@ import { useContext, useEffect } from "react";
 import "./Login.css";
 import StaticNavBar from "../StaticNavBar/StaticNavBar";
 import AppContext from "../utils/AppContext";
+import { useNavigate } from "react-router-dom";
 
 
 const LoginPage = () => {
 
     let { loginUser } = useContext(AppContext);
+
+    let navigate = useNavigate();
+    const forgothandle = () => {
+        navigate('/forgot')
+    }
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,7 +27,7 @@ const LoginPage = () => {
         </div>    
     <div className="login_background_picture"></div>
         <div className="navbar_homepage">
-            <Navbar />
+            <Navbar showApplyNowButton={true} isDashboard={false}  />
         </div>
 
     <div className="login_page_master_div">
@@ -39,7 +45,7 @@ const LoginPage = () => {
         {/* {authloader ? <span id="authloader"></span> : <>LOGIN</>} */}
         Login
         </button>
-        <div className="forget_password"><span>Forget Password</span></div>
+        <div className="forget_password" onClick={forgothandle}><span>Forget Password</span></div>
 
     </form>
     </div>

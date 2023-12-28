@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
     path('', include('wefund_login.urls')),
+
 ]
 
 if settings.DEBUG:

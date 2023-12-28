@@ -49,9 +49,9 @@ input:-webkit-autofill {
     border: 1px solid #3AA641;
 }
 
-.inputbox .choose_image {
+/* .inputbox .choose_image {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-left: auto;
-}
+    margin-right: auto;
+} */

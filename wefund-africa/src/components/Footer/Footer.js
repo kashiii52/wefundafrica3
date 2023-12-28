@@ -33,10 +33,10 @@ const Footer = () => {
             <img src={tl_logo} />
           </div>
           <div className="company_vision">
-            <p>We Fund Africa</p>
+            <p>WeFund Africa</p>
           </div>
           <div className="footer_number">
-            <span>+27860 995 002</span>
+            <span>0860 767 067</span>
           </div>
           <div className="footer_email">
             <span>info@wefund.africa</span>
@@ -78,9 +78,13 @@ const Footer = () => {
       <div className="footer_border_external"><div className="footer_border_line"></div></div>
 
       <div className="footer_copyright_social_icons">
-        <div className="footer_title">
+        {/* <div className="footer_title">
           Copyright © 2021 Member of Matoto Group Of Companies | Powered by
           Matoto Technologies
+        </div> */}
+        <div className="footer_title">
+        <a href="https://www.freshfarms.co.za/">Copyright © 2021 Member of Matoto Group Of Companies | 
+          Powered by Matoto Technologies</a>
         </div>
       </div>
     </div>

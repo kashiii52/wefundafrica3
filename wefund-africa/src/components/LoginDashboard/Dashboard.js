@@ -63,6 +63,7 @@ import StaticNavBar from "../StaticNavBar/StaticNavBar";
 import AppContext from "../utils/AppContext";
 import FileUpload from "../FileUpload/FileUpload";
 import { useLocation, useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const Dashboard = () => {
     let { userDetail } = useContext(AppContext);
@@ -96,6 +97,9 @@ const Dashboard = () => {
         <div className="Homepage_master_div">
             <div>
                 <StaticNavBar />
+            <div className="navbar-for-dashboard">
+                <Navbar showApplyNowButton={false} isDashboard={true} />
+                </div>
             </div>
             <div>
                 <DashboardNavbar />

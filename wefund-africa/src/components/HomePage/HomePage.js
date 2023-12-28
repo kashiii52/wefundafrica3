@@ -64,7 +64,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="navbar_homepage">
-        <Navbar />
+        <Navbar showApplyNowButton={true} isDashboard={false}  />
       </div>
 
       <div className="service_background">

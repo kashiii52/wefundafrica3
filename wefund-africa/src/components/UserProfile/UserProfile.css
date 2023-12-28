@@ -134,6 +134,43 @@
         font-weight: 550;
         color: #fff;
     }
+
+
+    .inputbox-image {
+        margin: 5px 0px;
+        position: relative;
+        width: 250px;
+    }
+
+    .inputbox-image input {
+        margin-left: 5px;
+        width: 230px;
+        padding: 5px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+        background: transparent;
+    }
+
+    #upload_image_button {
+        width: 100px;
+        border: none;
+        background: #3AA641;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #F2F4F9;
+        height: 30px;
+        font-weight: bold;
+        margin: 10px 5px;
+    }
+
+    #upload_image_button:hover {
+        background: #3AA641;
+    }
 }
 
 
@@ -288,6 +325,42 @@
         color: #fff;
         margin-right: 20px;
         
+    }
+
+    .inputbox-image {
+        margin: 5px 0px;
+        position: relative;
+        width: 250px;
+    }
+
+    .inputbox-image input {
+        margin-left: 5px;
+        width: 150px;
+        padding: 5px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+        background: transparent;
+    }
+
+    #upload_image_button {
+        width: 100px;
+        border: none;
+        background: #3AA641;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #F2F4F9;
+        height: 30px;
+        font-weight: bold;
+        margin: 10px 5px;
+    }
+
+    #upload_image_button:hover {
+        background: #3AA641;
     }
 }
 
@@ -444,5 +517,41 @@
         font-weight: 550;
         color: #fff;
         margin-right: 10px;
+    }
+
+    .inputbox-image {
+        margin: 5px 0px;
+        position: relative;
+        width: 250px;
+    }
+
+    .inputbox-image input {
+        margin-left: 5px;
+        width: 140px;
+        padding: 5px;
+        border: 1px solid #5c5b5b;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+        background: transparent;
+    }
+
+    #upload_image_button {
+        width: 80px;
+        border: none;
+        background: #3AA641;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        color: #F2F4F9;
+        height: 30px;
+        font-weight: bold;
+        margin: 10px 5px;
+    }
+
+    #upload_image_button:hover {
+        background: #3AA641;
     }
 }

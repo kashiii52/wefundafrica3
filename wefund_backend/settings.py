@@ -49,12 +49,16 @@ INSTALLED_APPS = [
     "rest_framework",
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
+    'rest_framework.authtoken',
+    # 'accounts',
+    'django_rest_passwordreset',
     # 'wefund_login',
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     )
 }
 
@@ -126,7 +130,10 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR,'wefund-africa/build'),
-            os.path.join(BASE_DIR,'wefund_backend/build')
+            os.path.join(BASE_DIR,'wefund_backend/build'),
+            
+            os.path.join(BASE_DIR, 'wefund_login/templates'),
+            
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -239,3 +246,24 @@ STATICFILES_DIRS = (
 # # Static files (CSS, JavaScript, images)
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # Replace with your preferred backend
+EMAIL_HOST = 'smtp.gmail.com'  # Replace with your email host for gmail -> 'smtp.gmail.com'
+EMAIL_PORT = 587  # Replace with your email port
+EMAIL_USE_TLS = True  # Set to False if your email server doesn't use TLS
+EMAIL_HOST_USER = 'malikkashan08@gmail.com'  # Replace with your email username
+EMAIL_HOST_PASSWORD = 'lylw avhz wquj vzzm'  # Replace with your email password
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'  # Replace with your preferred backend
+# EMAIL_HOST = 'smtp.afrihost.co.za'
+# EMAIL_PORT = 465
+# EMAIL_USE_TLS = False
+# EMAIL_USE_SSL = True
+# EMAIL_HOST_USER = 'Funding@wefund.africa'
+# EMAIL_HOST_PASSWORD = 'FuND!nG@2k23!'
+
+
+# APPEND_SLASH=False
